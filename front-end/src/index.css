@@ -1,0 +1,35 @@
+@import "flowbite";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  h5 {
+    font-size: 1.75rem;
+    color: rgb(30, 41, 63);
+    opacity: 0.8;
+
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.875rem;
+  }
+}
+.same-width-button {
+  width: 150px;
+}
