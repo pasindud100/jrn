@@ -4,7 +4,14 @@ import cors from "cors";
 import dotenv from "dotenv";
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://your-frontend-url.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 dotenv.config();
 
